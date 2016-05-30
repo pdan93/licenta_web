@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Elixir Fashion</title>
-	<!-- All css Files Here -->
+	<!-- All daniel Files Here -->
 	<!-- fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500' rel='stylesheet' type='text/css'>
 	<!-- bootstrap css -->
