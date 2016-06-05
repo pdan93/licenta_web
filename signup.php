@@ -37,15 +37,26 @@ if (isset($_POST['first_name']))
 
 	}
 	else
-	if (isset($_POST['email']))
+	if (isset($_POST['email'])) //LOGIN PART
 	{
 	$ok=1;
 	$posted = 2;
 	$message = '';
-	$results = mysqli_query($conn,"SELECT * FROM users WHERE email='".$_POST['email']."';");
+	if (be_secure('BE_SECURE_LOGIN')==1)
+		{
+		$results = mysqli_query($conn,"SELECT * FROM users WHERE email='".mysqli_escape_string($conn,$_POST['email'])."';");
+		}
+		else
+		$results = mysqli_query($conn,"SELECT * FROM users WHERE email='".$_POST['email']."';");
+
+	if (!$results)
+		{
+		header('HTTP/1.1 500 Internal Server Error');
+		die();
+		}
 	if (mysqli_num_rows($results)) {
 		$row = mysqli_fetch_array($results);
-		if ($row['password'] != md5($_POST['password']))
+		if ($row['password'] == md5($_POST['password']))
 			{
 			$ok=1;
 			$_SESSION['login']=1;
@@ -98,7 +109,7 @@ include ('includes/template/header.php');
 					<h2>Login</h2>
 					<form action="" method="post" class="signup_form">
 						<label>Email</label>
-						<input type="email" name="email">
+						<input type="text" name="email">
 						<label>Password</label>
 						<input type="password" name="password">
 						<input type="submit" value="Submit" />
