@@ -51,8 +51,8 @@ if (isset($_POST['first_name']))
 
 	if (!$results)
 		{
-		header('HTTP/1.1 500 Internal Server Error');
-		die();
+	//	header('HTTP/1.1 500 Internal Server Error');
+		//die(); 
 		}
 	if (mysqli_num_rows($results)) {
 		$row = mysqli_fetch_array($results);
