@@ -3,9 +3,25 @@ session_start();
 $servername = "localhost";
 $username = "elixir_fashion";
 $password = "elixir_fashion123";
-
+$database = "elixir_fashion";
+if (file_exists("../ip_map"))
+	{
+	$f_ip_map = fopen("../ip_map","r");
+	$ip = $_SERVER['REMOTE_ADDR'];
+	while ($line = fgets($f_ip_map)) {
+		if (strpos($line,$ip)!==false)
+			{
+			$db_nr = trim(substr($line,strpos($line,' ')+1));
+			$username = 'test'.$db_nr.'user';
+			$password = 'test'.$db_nr.'pass';
+			$database = 'elixir_fashion'.$db_nr;
+			break;
+			}
+	}
+	fclose($f_ip_map);
+	}
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, 'elixir_fashion');
+$conn = mysqli_connect($servername, $username, $password, $database);
 
 // Check connection
 if (!$conn) {
