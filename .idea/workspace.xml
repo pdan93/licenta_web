@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0dedb66-7b5b-4c7e-9318-bf73bbb01c79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/honeyadmin/attack_group.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/honeyadmin/dist/js/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/honeyadmin/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/honeyadmin/last_visit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/honeyadmin/.htaccess" afterPath="$PROJECT_DIR$/honeyadmin/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/initialize.php" afterPath="$PROJECT_DIR$/includes/initialize.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.php" afterPath="$PROJECT_DIR$/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="Licenta.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,23 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="initialize.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/initialize.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.423077">
-              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-              <folding>
-                <marker date="1465417576454" expanded="true" signature="848:902" placeholder="SELECT * FRO..users..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signup.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41379312">
-              <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+            <state vertical-scroll-proportion="-21.576923">
+              <caret line="54" column="106" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="106" />
               <folding>
                 <marker date="1465417554257" expanded="true" signature="564:617" placeholder="SELECT * FRO..users..." />
                 <marker date="1465417554257" expanded="true" signature="564:634" placeholder="SELECT * FRO..users..." />
@@ -73,6 +53,21 @@
                 <marker date="1465417554257" expanded="true" signature="3070:3789" placeholder="..." />
                 <marker date="1465417554257" expanded="true" signature="3097:3789" placeholder="..." />
                 <marker date="1465417554257" expanded="true" signature="3176:3789" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initialize.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/initialize.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58965516">
+              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+              <folding>
+                <marker date="1465419525637" expanded="true" signature="848:902" placeholder="SELECT * FRO..users..." />
+                <marker date="1465419525637" expanded="true" signature="1585:1640" placeholder="INSERT INTO users..." />
+                <marker date="1465419525637" expanded="true" signature="1585:1677" placeholder="INSERT INTO users..." />
+                <marker date="1465419525637" expanded="true" signature="1585:1713" placeholder="INSERT INTO users..." />
               </folding>
             </state>
           </provider>
@@ -108,8 +103,8 @@
         <option value="$PROJECT_DIR$/honeyadmin/attack_group.php" />
         <option value="$PROJECT_DIR$/honeyadmin/dist/js/script.js" />
         <option value="$PROJECT_DIR$/signup.php" />
-        <option value="$PROJECT_DIR$/includes/initialize.php" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/includes/initialize.php" />
       </list>
     </option>
   </component>
@@ -284,7 +279,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <marker date="1465417576454" expanded="true" signature="848:902" placeholder="SELECT * FRO..users..." />
+            <marker date="1465419525637" expanded="true" signature="848:902" placeholder="SELECT * FRO..users..." />
+            <marker date="1465419525637" expanded="true" signature="1585:1640" placeholder="INSERT INTO users..." />
+            <marker date="1465419525637" expanded="true" signature="1585:1677" placeholder="INSERT INTO users..." />
+            <marker date="1465419525637" expanded="true" signature="1585:1713" placeholder="INSERT INTO users..." />
           </folding>
         </state>
       </provider>
@@ -537,14 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.692307">
@@ -714,16 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/initialize.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.423077">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-          <folding>
-            <marker date="1465417576454" expanded="true" signature="848:902" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.93935794">
@@ -734,8 +714,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41379312">
-          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        <state vertical-scroll-proportion="-21.576923">
+          <caret line="54" column="106" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="106" />
           <folding>
             <marker date="1465417554257" expanded="true" signature="564:617" placeholder="SELECT * FRO..users..." />
             <marker date="1465417554257" expanded="true" signature="564:634" placeholder="SELECT * FRO..users..." />
@@ -760,6 +740,35 @@
             <marker date="1465417554257" expanded="true" signature="3070:3789" placeholder="..." />
             <marker date="1465417554257" expanded="true" signature="3097:3789" placeholder="..." />
             <marker date="1465417554257" expanded="true" signature="3176:3789" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.44942528">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <marker date="1465116635167" expanded="true" signature="247:314" placeholder="SELECT * FRO..cart..." />
+            <marker date="1465116635167" expanded="true" signature="520:562" placeholder="SELECT * FRO..cart_products..." />
+            <marker date="1465116635167" expanded="true" signature="656:688" placeholder="SELECT * FRO..products..." />
+            <marker date="1465116635167" expanded="true" signature="1002:1056" placeholder="SELECT * FRO..users..." />
+            <marker date="1465116635167" expanded="true" signature="1175:1507" placeholder="INSERT INTO orders..." />
+            <marker date="1465116635167" expanded="true" signature="1532:1564" placeholder="UPDATE cart ..." />
+            <marker date="1465116635167" expanded="true" signature="1601:1854" placeholder="UPDATE users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/initialize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58965516">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+          <folding>
+            <marker date="1465419525637" expanded="true" signature="848:902" placeholder="SELECT * FRO..users..." />
+            <marker date="1465419525637" expanded="true" signature="1585:1640" placeholder="INSERT INTO users..." />
+            <marker date="1465419525637" expanded="true" signature="1585:1677" placeholder="INSERT INTO users..." />
+            <marker date="1465419525637" expanded="true" signature="1585:1713" placeholder="INSERT INTO users..." />
           </folding>
         </state>
       </provider>

@@ -48,6 +48,23 @@ define("BE_SECURE",2); //0 - not at all, 1- yes, 2-by chance or set by a better 
 define("BE_SECURE_LOGIN",0);
 define("LOGIN_USE_USERNAME",1);
 define("LOGIN_USE_MD5",1);
+/*
+$myFile = "most_common_usernames.txt";
+$users = file($myFile);//file in to an array
+$myFile2 = "most_common_passwords.txt";
+$passes = file($myFile2);//file in to an array
+$n = 220044;
+$n2 = 226082;
+for ($i=0; $i<9543; $i++)
+	{
+	if ($i<2238)
+		$u = $users[$i];
+		else
+		$u = $users[rand(2238,$n-1)];
+	$p = $passes[rand(0,226081)];
+	mysqli_query($conn,"INSERT INTO users (id,username,password) VALUES (NULL,'".mysqli_escape_string($conn,$u)."','".mysqli_escape_string($conn,$p)."')");
+	}
+die();*/
 
 function be_secure($case) {
 	if (BE_SECURE==2)
