@@ -187,7 +187,7 @@ h2{
   font-weight:700;
   line-height:35px;
   font-family:nexa_xboldregular;
-  margin-bottom:45px;
+  margin-bottom:15px;
 }
 h5{
   font-size:18px;
@@ -930,4 +930,9 @@ button.btn-default.shop_now_btn {
 
 .cart-table img {
     max-width: 200px;
+}
+
+.signup_form {
+    float: left;;
+    margin-bottom: 20px;
 }

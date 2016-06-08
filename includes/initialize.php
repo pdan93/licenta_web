@@ -45,7 +45,9 @@ if ($ok_login==1)
 }
 define("LOGGED_IN",$ok_login);
 define("BE_SECURE",2); //0 - not at all, 1- yes, 2-by chance or set by a better constant
-define("BE_SECURE_LOGIN",2);
+define("BE_SECURE_LOGIN",0);
+define("LOGIN_USE_USERNAME",1);
+define("LOGIN_USE_MD5",1);
 
 function be_secure($case) {
 	if (BE_SECURE==2)
