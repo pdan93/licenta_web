@@ -21,6 +21,7 @@ function getcount($sql) {
 }
 
 $attack_types_map = array(
+	0 => array( 'name'=>'None', 0=> 'none'),
 	1 => array(
 		'name'=>'Sql Injection',
 		1 => 'Tautologie',

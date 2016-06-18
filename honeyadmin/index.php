@@ -164,7 +164,7 @@ include ('includes/template/header.php');
 					</div>
 					<!-- /.box-header -->
 					<div class="box-body">
-						<table id="attacks-table" class="table table-bordered table-hover">
+						<table id="attacks-table" class="table table-for-script table-bordered table-hover">
 							<thead>
 							<tr>
 								<th>Ip</th>
@@ -198,6 +198,70 @@ include ('includes/template/header.php');
 								<th>Date start</th>
 								<th>Date end</th>
 								<th>Visit</th>
+							</tr>
+							</tfoot>
+						</table>
+					</div>
+					<!-- /.box-body -->
+				</div>
+			</div>
+			
+			<div class="col-xs-12">
+				<div class="box">
+					<div class="box-header">
+						<h3 class="box-title">Last Logs</h3>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<table id="last-logs-table" class="table table-for-script table-bordered table-hover">
+							<thead>
+							<tr>
+								<th>Nr</th>
+								<th>Ip</th>
+								<th>Attack Type</th>
+								<th>Spec. Attack Type</th>
+								<th>URI</th>
+								<th>Filename</th>
+								<th>Method</th>
+								<th>Date</th>
+								<th>Headers In</th>
+								<th>Request Body</th>
+							</tr>
+							</thead> 
+							<tbody>
+							<?php
+								$results = mysqli_query($conn,"SELECT * FROM logs ORDER BY id DESC LIMIT 50;");
+								$i=1;
+								while ($row = mysqli_fetch_array($results))
+									{echo '<tr>
+										<td>'.$i.'</td>
+										<td>'.$row['r_useragent_ip'].'</td>
+										<td>'.$attack_types_map[$row['attack_type']]['name'].'</td>
+										<td>'.$attack_types_map[$row['attack_type']][$row['specific_attack_type']]['name'].'</td>
+										<td>'.$row['r_uri'].'</td>
+										<td>'.$row['r_filename'].'</td>
+										<td>'.$row['r_method'].'</td>
+										<td>'.$row['timestamp'].'</td>
+										<td>'.$row['headers_in'].'</td>
+										<td>'.$row['request_body'].'</td>
+										</tr>
+									';
+									$i++;
+									}
+							?>
+							</tbody>
+							<tfoot>
+							<tr>
+								<th>Nr</th>
+								<th>Ip</th>
+								<th>Attack Type</th>
+								<th>Spec. Attack Type</th>
+								<th>URI</th>
+								<th>Filename</th>
+								<th>Method</th>
+								<th>Date</th>
+								<th>Headers In</th>
+								<th>Request Body</th>
 							</tr>
 							</tfoot>
 						</table>

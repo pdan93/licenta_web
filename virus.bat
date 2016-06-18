@@ -1,2 +1,0 @@
-@echo Them apples
-@pause
